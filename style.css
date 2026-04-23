@@ -1,0 +1,146 @@
+ @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+* {
+    margin: 0px 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #fff;
+}
+
+/* NAVBAR */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.section-content{
+  margin: 0 100px;
+  padding: 0 20px;
+  max-width: var(--site-max-width);
+}
+
+header {
+    display: fixed;
+    width: 100%;
+    z-index: 5;
+    background: #020617;
+}
+
+header .navbar{
+display: flex;
+padding: 20px;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text{
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+.navbar .nav-menu{
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .nav-menu .nav-link{
+  padding: 10px 18px;
+  color: white;
+  font-size: 1.12rem;
+  border-radius: 30px;
+  transition: 0.3s ease;
+ }
+
+ .navbar .nav-menu .nav-link:hover{
+  color: #020617;
+  background: #38bdf8;
+ }
+
+ .navbar :where(#menu-close-button, #menu-open-button){
+  display: none;
+ }
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.skills-grid div {
+    background: #1e293b;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* CARDS */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+/* ANIMATION */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.fade h2{
+    margin-bottom: 20px;
+}  
+
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
