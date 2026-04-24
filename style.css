@@ -138,6 +138,13 @@ footer {
     margin-bottom: 20px;
 }  
 
+.fade p{
+    margin-top: 30px;
+    text-decoration: solid;
+    font-weight: 1.12rem;
+    font-size: large;
+    
+}
 
 .fade.show {
     opacity: 1;
